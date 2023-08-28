@@ -1,0 +1,228 @@
+     /* CSS Styles */
+     body {
+        background-color: #000000;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+    .nav {
+    text-align: right;
+    height: 70px;
+    }
+    
+    .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    }
+    
+    .nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+    margin-right: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    
+    .nav ul li a:hover {
+    color: red;
+    }
+    .head {
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        letter-spacing: 6px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .company-name {
+        margin-left: 400px;
+        text-align: center;
+        font-family: 'system ui';
+        
+        
+    }
+    .company-name h1{
+        font-size: 65px;
+    }
+    
+    .services-container {
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    .service-card {
+        border: 1px solid #ccc;
+        background-color: #333;
+        margin: 25px;
+        padding: 10px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+        width: 400px;
+        text-align: center;
+    }
+    
+    .service-icon {
+        font-size: 8em;
+        padding: 25px;
+    }
+    
+    .service-icon img {
+        height: 300px;
+        width: 350px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .service-title {
+        font-size: 24px;
+        color: #FF0000;
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .service-description {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+        margin-top: 20px;
+        color: #a7a3a3;
+    }
+    
+    /* Additional Services Styles */
+    .service-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .service-item {
+        width: 300px;
+        background-color: #333;
+        margin: 25px;
+        padding: 10px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: #fff;
+    }
+    
+    .service-item i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .service-item p {
+        font-size: 15px;
+        margin: 0;
+        color: #999999;
+    }
+    
+    .service-item h3 {
+        color: #FF0000;
+    }
+    
+    /* Why Choose Us Section */
+    .why-choose-us-container {
+        padding: 50px;
+        background-color: #333;
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 5px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .why-choose-us-container p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+    /* Call to Action Section */
+    .cta-section {
+        background-color: #333;
+        padding: 50px;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+        border-radius: 5px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .cta-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: #a7a3a3;
+    }
+    
+    .cta-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .contact-button {
+        background-color: #f00;
+        border: 0;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+    }
+    
+    .contact-button:hover {
+        background-color: #c00;
+    }
+    .book-now-button{
+        background-color: #f00;
+        border: 0;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        margin-left: 600px;
+    }
+    .book-now-button:hover {
+        background-color: #c00;
+    }
+    
+    /* Styles for the service item button */
+    .cta-button {
+        background: #f00;
+        border: 0;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }

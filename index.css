@@ -1,0 +1,128 @@
+ /* CSS Styles */
+ body {
+    background-image: url('Pics/background3.jpg');
+    background-color: #222;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+    text-align: right;
+    height: 70px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+    margin-right: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.nav ul li a:hover {
+    color: red;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 6px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.company-name {
+    margin-left: 400px;
+    text-align: center;
+    font-family: 'system ui';
+    
+    
+}
+.company-name h1{
+    font-size: 65px;
+}
+
+
+.mid {
+    text-align: center;
+    background-image: url('Pics/paint.jpg');
+    background-size: cover;
+    padding: 50px;
+    height: 500px;
+}
+
+.mid h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.mid h2 {
+    font-size: 24px;
+}
+
+.btn {
+    margin-top: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.social-icons a{
+    color: #fff;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    
+}
+.footer-nav a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}

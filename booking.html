@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <h1>BOOKING</h1>
+    <form action="">
+        <!-- First Name -->
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <!-- Last Name -->
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Services Dropdown -->
+        <label for="services">Select a Service:</label>
+        <select id="services" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="custom_paint">Custom Paint Jobs</option>
+            <option value="vinyl_wraps">Vinyl Wraps</option>
+            <option value="decals_graphics">Decals and Graphics</option>
+            <option value="window_tinting">Window Tinting</option>
+            <option value="paint_protection_film">Paint Protection Film</option>
+            <option value="ceramic_coating">Ceramic Coating</option>
+            <option value="car_wraps_removal">Car Wraps Removal</option>
+            <option value="paint_correction">Paint Correction</option>
+            <option value="chrome_wrapping">Chrome Wrapping</option>
+            <option value="color_change_wraps">Color Change Wraps</option>
+        </select>
+
+        <!-- Price Section (Auto-filled based on selected service) -->
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" readonly>
+
+        <!-- Date Field -->
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="booking_date" required>
+
+        <!-- Service Location-->
+        <label for="location">Select the location:</label>
+        <select name="location" id="location">
+            <option value="" disabled selected>Select the location</option>
+            <option value="Mobile">Mobile Service</option>
+            <option value="shop">The Shop</option>
+        </select>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Book Now">
+    </form>
+    <script>
+        // Function to update the price based on the selected service
+        function updatePrice() {
+            var servicesSelect = document.getElementById("services");
+            var priceInput = document.getElementById("price");
+
+            // Price mapping based on selected service
+            var prices = {
+                custom_paint: '100,000',
+                vinyl_wraps: '90,000',
+                decals_graphics: '80,000',
+                window_tinting: '50,000',
+                paint_protection_film: '70,000',
+                ceramic_coating: '120,000',
+                car_wraps_removal: '100,000',
+                paint_correction: '100,000',
+                chrome_wrapping: '150,000',
+                color_change_wraps: '85,000',
+            };
+             // Get the selected value from the dropdown
+             var selectedService = servicesSelect.value;
+
+            // Update the price field with the corresponding value
+            if (prices.hasOwnProperty(selectedService)) {
+            priceInput.value = "Ksh " + prices[selectedService];
+            } else {
+             priceInput.value = "";
+            }
+        }   
+
+        // Attach the updatePrice function to the change event of the services dropdown
+        var servicesSelect = document.getElementById("services");
+        servicesSelect.addEventListener("change", updatePrice);
+
+        // Call the updatePrice function initially to set the default price
+        updatePrice();
+        
+</script>
+</body>
+</html>

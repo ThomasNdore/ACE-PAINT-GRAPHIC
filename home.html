@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE Car Paint Jobs and Graphics</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="login.html" target="_blank">LOGIN</a></li>
+                <li><a href="signup.html" target="_blank">SIGNUP</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('Pics/crystler.jpg');">
+                <h1 class="slide-title">ACE</h1>
+                <h2 class="slide-subtitle">PAINT &amp; GRAPHICS</h2>
+            </div>
+            <div class="swiper-slide" style="background-image: url('Pics/cool.jpg');">
+                <h1 class="slide-title">ACE</h1>
+                <h2 class="slide-subtitle">PAINT &amp; GRAPHICS</h2>
+            </div>
+            <div class="swiper-slide" style="background-image: url('Pics/DB9.jpg');">
+                <h1 class="slide-title">ACE</h1>
+                <h2 class="slide-subtitle">PAINT &amp; GRAPHICS</h2>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="section" id="introduction">
+        <div class="section-content">
+            
+            <div class="introduction">
+                <p class="section-description">Our business, Car Paint Jobs and Graphics, was founded with a passion for transforming vehicles into stunning works of art. With years of experience in the industry, we have honed our skills and expertise in custom paint jobs and graphics.</p>
+                <br>
+                <p class="section-description">Our journey began with the aim of providing exceptional automotive enhancement services to our valued customers. We understand the profound impact that a well-executed paint job can have on the overall aesthetics and appeal of a vehicle. From the smallest details to the grandest designs, we take pride in our meticulous approach and attention to every project we undertake.</p>
+                <br>
+                <p class="section-description">Our inspiration lies in the beauty of automotive artistry, and we strive to bring out the unique personality of each vehicle through our craftsmanship.</p>
+            </div>
+            <div class="introduction-image">
+                <img src="Pics/portfolio1.jpg" alt="Introduction Image 3">
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="section" id="process">
+        <div class="section-content">
+            <h2 class="section-title">Process Explanation</h2>
+            <div class="process-step">
+                <img src="Pics/consultation.jpg" alt="Process Image 1" class="process-image">
+                <p class="section-description">At Car Paint Jobs and Graphics, we follow a comprehensive and meticulous process to ensure exceptional results in every project we undertake. Our process begins with an initial consultation where we listen attentively to our clients' ideas, preferences, and requirements. We believe in collaboration and work closely with our customers to understand their vision and translate it into a tangible design concept.</p>
+            </div>
+            <div class="process-step">
+                <p class="section-description">Once the design is finalized, our skilled team of artists and technicians meticulously prepare the vehicle's surface, ensuring a smooth canvas for the paint job or graphics application.</p>
+                <img src="Pics/pi2.jpg" alt="Process Image 2" class="process-image">
+            </div>
+            <div class="process-step">
+                <img src="Pics/portfolio4.jpg" alt="Process Image 3" class="process-image">
+                <p class="section-description">We use high-quality paints, materials, and state-of-the-art techniques to bring the design to life. Our skilled artisans employ precise brushwork, airbrushing, and cutting-edge graphic application methods to create stunning and durable finishes.</p>
+            </div>
+            <div class="process-step">
+                <p class="section-description">Quality control is of utmost importance to us. We conduct thorough inspections at each stage of the process to maintain the highest standards of craftsmanship. Once the paint job or graphics application is complete, we conduct a final inspection to ensure perfection and customer satisfaction.</p>
+                <img src="Pics/portfolio3.jpg" alt="Process Image 4" class="process-image">
+            </div>
+            <div class="process-step">
+                <img src="Pics/portfolio2_1.jpg" alt="Process Image 5" class="process-image">
+                <p class="section-description">We take pride in delivering not only visually striking results but also long-lasting and durable finishes. Our commitment to excellence and customer satisfaction drives us to go above and beyond to create automotive masterpieces that exceed expectations.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="faqs">
+        <div class="section-content">
+            <h2 class="section-title">FAQs</h2>
+            <ul class="faq-list">
+                <li>
+                    <h3 class="faq-question">Question: What is the difference between ceramic coating and paint protection film?</h3>
+                    <p class="faq-answer">Answer: Ceramic coating is a liquid polymer that chemically bonds with the vehicle's factory paint, providing a protective layer that enhances gloss and repels dirt and water. On the other hand, paint protection film (PPF) is a transparent film that offers physical protection against scratches, rock chips, and environmental damage. Both solutions provide different types of protection and can be combined for maximum safeguarding.
+
+                    </p>
+                </li>
+                <li>
+                    <h3 class="faq-question">Question: What is the process for paint correction?</h3>
+                    <p class="faq-answer">Answer: Paint correction is a meticulous process that involves removing imperfections, such as swirl marks, scratches, and oxidation, from the vehicle's paint. Our skilled technicians use specialized tools and products to restore the paint's clarity and shine.</p>
+                </li>
+                <li>
+                    <h3 class="faq-question">Question: How long does it take to complete a vinyl wrap installation?</h3>
+                    <p class="faq-answer">Answer: The time required for a vinyl wrap installation depends on the size of the vehicle and the complexity of the design. Generally, it takes one to three days to complete the process, ensuring a precise and professional result.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="signup-box">
+        <form id="MyForm" action="">
+            <div class="user-box">
+                <input type="email" name="email" id="email">
+                <label>E-mail</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="username" id="username">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="pass" id="password">
+                <label>Password</label>
+            </div>
+            <center>
+                <!-- Replace the <a> element with a <button> element -->
+                <button type="submit" onclick="validateForm()">
+                    SEND
+                    <span></span>
+                </button>
+            </center>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+    var emailInput = document.getElementById('email');
+    var usernameInput = document.getElementById('username');
+    var passwordInput = document.getElementById('password');
+
+    var email = emailInput.value.trim();
+    var username = usernameInput.value.trim();
+    var password = passwordInput.value.trim();
+
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email pattern
+    var usernameRegex = /^[a-zA-Z0-9_-]+$/; // Username pattern
+    var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // Password pattern
+
+    var isValid = true;;
+
+    if (!emailRegex.test(email)) {
+        isValid = false;
+        alert("Please enter a valid email address.");
+    }
+
+    if (!usernameRegex.test(username)) {
+        isValid = false;
+        alert("Username can only contain letters, numbers, hyphens, and underscores.");
+    }
+
+    if (!passwordRegex.test(pass)) {
+        isValid = false;
+        alert("Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, and one digit.");
+    }
+
+    if (isValid) {
+        document.getElementById("myForm").submit();
+    }
+}
+    </script>
+</body>
+
+</html>

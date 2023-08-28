@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login</title>
+    <script>
+        function validateForm() {
+    var usernameInput = document.getElementById('username');
+    var passwordInput = document.getElementById('password');
+
+    var username = usernameInput.value.trim();
+    var password = passwordInput.value.trim();
+
+    var usernameRegex = /^[a-zA-Z0-9_-]+$/; // Username pattern
+    var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // Password pattern
+
+    var isValid = true;;
+
+    if (!usernameRegex.test(username)) {
+        isValid = false;
+        alert("Username can only contain letters, numbers, hyphens, and underscores.");
+    }
+
+    if (!passwordRegex.test(pass)) {
+        isValid = false;
+        alert("Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, and one digit.");
+    }
+
+    if (isValid) {
+        document.getElementById("myForm").submit();
+    }
+}
+    </script>
+    <title>Login</title>
+</head>
+<body>
+<!--<?php
+
+?>-->
+    <div class="login-box">
+        <form id="myForm" action="" onclick="validateForm()">
+            <div class="user-box">
+                <input type="text" name="username" id="password">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="pass" id="password">
+                <label>Password</label>
+            </div>
+            <center>
+                <button type="submit">
+                    SEND
+                    <span></span>
+                </button>
+            </center>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Create account</a></p>
+    </div>
+    
+</body>
+</html>
